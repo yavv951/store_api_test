@@ -10,9 +10,9 @@ class UserStore(Enum):
     USER_UUID = 'user_uuid'
     HEADERS = 'headers'
     USER_INFO = 'user_info'
-    #store: str
+    STORE = 'store'
     #store_uuid: int
-    #item: str
+    ITEM = 'item'
     #price: int
     #item_uuid: int
     #user_balance: Balance = attr.ib(default=None)

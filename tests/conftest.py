@@ -6,6 +6,7 @@ from endpoints_models.app import StoreApp
 from endpoints_models.auth.model import ResponseAuth
 from endpoints_models.models import UserStore
 from endpoints_models.register.model import DataRegister, ResponseRegister
+from endpoints_models.store.model import StoreData, ResponseStore
 from endpoints_models.user_info.model import DataUserInfo, ResponseUserInfo
 
 
@@ -47,6 +48,16 @@ def user_info(app, auth_user):
     data_dict = auth_user
     return data_dict
 
+@pytest.fixture
+def store(app, auth_user):
+    """Add user info"""
+    data_store = StoreData.random()
+    res = app.store.post_store(name_store=data_store.name,
+                               headers=auth_user[UserStore.HEADERS],
+                               type_response=ResponseStore)
+    auth_user[UserStore.STORE] = res.data
+    data_dict = auth_user
+    return data_dict
 
 def pytest_addoption(parser):
     parser.addoption(
