@@ -4,7 +4,7 @@
     "project": "api store project",
     "environment": "PROD",
     "comment": "link to pull request",
-    "reportLink": "https://jenkins.autotests.cloud/job/api_project_store/",
+    "reportLink": "https://jenkins.autotests.cloud/job/api_project_store/3/",
     "language": "en",
     "allureFolder": "allure-report/",
     "enableChart": true
