@@ -1,0 +1,17 @@
+
+{
+  "base": {
+    "project": "api store project",
+    "environment": "PROD",
+    "comment": "link to pull request",
+    "reportLink": "https://jenkins.autotests.cloud/job/api_project_store/",
+    "language": "en",
+    "allureFolder": "allure-report/",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "5469385155:AAHyQhkErEOdi8NT0m5NnoWAhkj6eRQIqro",
+    "chat": "-638095156",
+    "replyTo": ""
+  }
+}
