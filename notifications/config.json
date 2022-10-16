@@ -1,7 +1,7 @@
 
 {
   "base": {
-    "project": "api store project",
+    "project": "api_project_store",
     "environment": "PROD",
     "comment": "link to pull request",
     "reportLink": "https://jenkins.autotests.cloud/job/api_project_store/3/",
