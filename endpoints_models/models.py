@@ -11,11 +11,8 @@ class UserStore(Enum):
     HEADERS = 'headers'
     USER_INFO = 'user_info'
     STORE = 'store'
-    #store_uuid: int
     ITEM = 'item'
-    #price: int
-    #item_uuid: int
-    #user_balance: Balance = attr.ib(default=None)
+    USER_BALANCE = 'user_balance'
 
 
 class AuthInvalidResponse:

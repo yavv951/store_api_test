@@ -12,3 +12,4 @@ pre-commit>=2.20.0
 vulture>=2.5
 pre-commit-hooks>=4.3.0
 Faker>=14.2.0
+enum

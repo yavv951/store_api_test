@@ -1,3 +1,5 @@
+import random
+
 from faker import Faker
 from pydantic import BaseModel
 
@@ -6,28 +8,24 @@ fake = Faker()
 
 class DataStoreItem(BaseModel):
     """Модель для регистрации."""
-    price: str
+    price: float
     store_id: int
     description: str
-    image: str
+    #image: str
 
     @staticmethod
     def random(store_id):
         """Генерация данных для регистрации."""
-        return DataStoreItem(price=fake.name(), store_id=store_id, description=fake.catch_phrase())
-
-
-class ResponseStoreItem(BaseModel):
-    """Модель для ответа."""
-    message: str
+        return DataStoreItem(price=random.randint(1, 50), store_id=store_id, description=fake.catch_phrase())
 
 
 class ResponseStoreItemData(BaseModel):
     name: str
-    store_id: int
+    price: float
     itemID: int
-    description: int
-    image: str
+    description: str
+    #image: str
 
 
-
+class ResponseStoreItemsData(BaseModel):
+    items: list or list[ResponseStoreItemData]
