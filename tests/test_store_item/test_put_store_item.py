@@ -15,6 +15,7 @@ fake = Faker()
 @allure.story(f'Тест кейс 012 Изменение информации о товаре в магазине')
 @allure.link('https://github.com/yavv951', name='Owner')
 @pytest.mark.xfail(reason="Bug in metod")
+@pytest.mark.bug
 def test_put_store_item(app, store_item):
     """Put store item"""
     data_item = DataStoreItem.random(store_id=store_item[UserStore.STORE].uuid)

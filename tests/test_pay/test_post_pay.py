@@ -13,6 +13,7 @@ from endpoints_models.pay.model import DataPay, ResponseDataPay
 @allure.story(f'Тест кейс 015 Оплата за товар в магазине')
 @allure.link('https://github.com/yavv951', name='Owner')
 @pytest.mark.xfail(reason="Bug in metod")
+@pytest.mark.bug
 def test_post_pay(app, balance):
     """Add user balance"""
     data_pay = DataPay(itemId=balance[UserStore.ITEM].itemID)
