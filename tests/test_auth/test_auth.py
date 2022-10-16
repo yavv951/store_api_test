@@ -2,7 +2,7 @@ import allure
 import pytest
 from allure_commons.types import Severity
 
-from endpoints_models.auth.model import DataAuth, ResponseAuth
+from endpoints_models.auth.model import ResponseAuth
 from endpoints_models.models import UserStore
 
 
