@@ -1,5 +1,5 @@
 # Дипломный проект по автоматизации API тестирования для store. 
-<a target="_blank" href="https://app.swaggerhub.com/apis-docs/berpress/flask-rest-api/1.0.0#/">Веб сайт store</a>
+<a target="_blank" href="https://app.swaggerhub.com/apis-docs/berpress/flask-rest-api/1.0.0#/">Ссылка на store</a>
 
 ## :memo: Содержание:
 
