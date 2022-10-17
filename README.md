@@ -1,4 +1,3 @@
-[![tests](https://jenkins.autotests.cloud/job/store_api_test/ws/tests.yml/badge.svg)](https://jenkins.autotests.cloud/job/store_api_test/ws/tests.yml
 # Python Project REST API Store Testing
 
 This is a tutorial project that shows how to implement api tests in Python
